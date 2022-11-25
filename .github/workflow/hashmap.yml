@@ -1,0 +1,11 @@
+name: hashmap
+on: push
+jobs:
+  check_job:
+    name: check job
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@master
+    - name: Run a single-line script
+      run: echo "hello world!"
