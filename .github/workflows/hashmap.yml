@@ -6,6 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@v3
+      with:
+        submodules: true
     - name: make
       run: mkdir build&&cd build&&cmake ..&&make
