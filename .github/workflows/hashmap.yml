@@ -10,4 +10,4 @@ jobs:
       with:
         submodules: true
     - name: make
-      run: mkdir build&&cd build&&cmake ..&&make
+      run: mkdir build&&cd build&&cmake ..&&make&&./lockfree_hashmap
